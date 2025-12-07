@@ -5,4 +5,3 @@
 **Shift Baru:** D    
 **Shift KRS:** B
 
----
