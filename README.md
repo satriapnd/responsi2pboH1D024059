@@ -1,1 +1,5 @@
-# responsi2pboH1D024059
+Responsi 2 - Praktikum Pemrograman Berorientasi Objek
+Dibuat oleh: FALASIFA SATRIA PINANDITA
+NIM: H1D024059
+Shift Baru: B
+Shift KRS: D
