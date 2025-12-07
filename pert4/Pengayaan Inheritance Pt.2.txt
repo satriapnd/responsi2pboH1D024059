@@ -1,0 +1,19 @@
+[PERTANYAAN PENGAYAAN]
+
+1. Mengapa constructor di class Member wajib memanggil constructor Customer menggunakan super(...)?
+
+2. Apa tujuan memanggil super.tampilkanInfo() saat melakukan overriding method di subclass?
+
+3. Berikan contoh kondisi di mana pemanggilan super.method() sangat penting dalam pewarisan.
+
+4. Bagaimana keyword super membantu membedakan atribut yang memiliki nama sama antara parent dan child?
+
+5. Mengapa pendekatan inheritance lebih efisien dibanding menyalin ulang seluruh atribut dan method ke dalam class Member?
+
+
+Jawaban:
+1. super(...) wajib dipanggil karena constructor subclass harus menginisialisasi bagian superclass terlebih dahulu. Objek subclass selalu mencakup bagian superclass, sehingga variabel warisan harus diset sebelum bagian subclass.
+2. super.tampilkanInfo() digunakan agar data dasar dari superclass tetap ditampilkan sebelum subclass menambahkan informasi tambahan, sehingga kode tidak perlu ditulis ulang dan urutan tampilannya tetap rapi.
+3. super.method() penting ketika subclass menambah fungsi baru tanpa menghapus fungsi asli superclass. Misalnya, Manajer.hitungGaji() memanggil super.hitungGaji() untuk gaji pokok sebelum menambahkan tunjangan.
+4. super.X membedakan atribut milik superclass dari atribut subclass jika keduanya punya nama sama, sedangkan this.X mengacu pada atribut subclass.
+5. Inheritance lebih efisien karena memungkinkan kode digunakan kembali tanpa menyalin atribut dan method ke subclass. Perubahan di superclass otomatis berlaku ke subclass, membuat kode lebih ringkas dan mudah dirawat.
