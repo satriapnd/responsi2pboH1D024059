@@ -1,0 +1,15 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+Apa yang dimaksud dengan constructor overloading dalam pemrograman berorientasi objek?
+Bagaimana cara Java membedakan constructor yang memiliki nama sama namun parameter berbeda?
+Apa perbedaan antara mengakses variabel secara langsung (misalnya: objek.variabel = nilai) dengan menggunakan method setter?
+Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi data dalam sebuah class!
+Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
+
+Jawaban:
+1. Constructor overloading adalah kemampuan suatu class untuk memiliki lebih dari satu constructor, asalkan setiap constructor memiliki daftar parameter yang berbeda (jumlah parameter, tipe data parameter, atau urutan tipe data parameter). Ini memungkinkan objek dibuat dengan cara atau data awal yang bervariasi.
+2. Java membedakan constructor (atau method yang di-overload) berdasarkan tanda tangan method (method signature). Tanda tangan method terdiri dari nama method (dalam hal ini, nama class) dan daftar parameter (jumlah dan tipe parameter, serta urutan tipe data). Java tidak menggunakan tipe kembalian untuk membedakan constructor.
+3. Akses Langsung (objek.variabel = nilai): Memberikan akses penuh kepada kode luar untuk membaca atau mengubah nilai variabel kapan saja. Ini melanggar prinsip encapsulation dan tidak memungkinkan validasi data. Menggunakan Method Setter (objek.setVariabel(nilai)): Menyediakan lapisan kontrol atau validasi. Melalui setter, kita bisa memastikan bahwa data yang masuk memenuhi syarat tertentu (misalnya, stok tidak boleh negatif, harga harus positif) sebelum diizinkan untuk mengubah state objek.
+4. Encapsulation (Pembungkusan) adalah prinsip OOP yang mengikat data (state) dan metode (behavior) yang beroperasi pada data tersebut menjadi satu unit (class). Konsep ini melindungi data dengan mendeklarasikannya sebagai private. Method publik (getters dan setters) kemudian bertindak sebagai antarmuka yang terkontrol; setter khususnya membantu melindungi data karena menjadi satu-satunya gerbang yang mengizinkan perubahan data internal setelah data tersebut melewati proses validasi yang telah ditetapkan oleh class.
+5. Constructor tidak memiliki tipe kembalian, bahkan tidak menggunakan kata kunci void, karena fungsi fundamentalnya bukanlah mengembalikan nilai seperti method biasa. Sebaliknya, constructor bertanggung jawab untuk menginisialisasi dan mengembalikan instance (objek) baru dari class itu sendiri. Karena tipe kembaliannya sudah secara implisit dan pasti merupakan objek dari class yang sama, deklarasi tipe kembalian eksplisit menjadi tidak perlu dan dilarang dalam sintaks Java.
